@@ -1,0 +1,331 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : wordpressboss
+Template Name: Brohost - One Page Responsive Hosting Template
+Version      : 1.0                                          
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        float: none;
+        display: inline-block;
+    }
+
+    .mainmenu .navbar-nav li a {
+        padding: 20px 3px;
+        font-size: 14px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .single-blog img {
+        width: 100%;
+    }
+
+    .pricing-box {
+        margin-top: 30px;
+    }
+
+    .project-idea h2,
+    .project-idea p {
+        font-size: 22px;
+    }
+
+    .single-project-complete {
+        margin-top: 30px;
+    }
+
+    .about-text {
+        margin-top: 50px;
+    }
+
+    .section-title p {
+        padding: 0;
+    }
+
+    .contact-icon {
+        float: none;
+    }
+
+    .header-text p,
+    .single-testi-des {
+        padding: 0;
+    }
+
+    .call-to-action-small-button {
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    .single-footer-top {
+        padding-bottom: 30px;
+    }
+
+    .header-text h2 {
+        font-size: 60px;
+    }
+
+    .single-what {
+        margin-bottom: 30px;
+    }
+    
+    .portfolio-item {
+        width: 50%;
+    }
+.single-contact {
+	margin-bottom: 30px;
+}
+    .contact-icon {
+	margin-bottom: 16px;
+}
+     body {
+        overflow-x: hidden;
+    }
+    .header-image {
+	display: none;
+}
+    .single-about h4 {
+	font-size: 18px;
+}
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        background: #000;
+    }
+
+    .menu-bg .navbar-toggle .icon-bar {
+        background: #000;
+    }
+
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+
+    .navbar {
+        min-height: 0px;
+    }
+
+    .mainmenu .navbar-nav li {
+        margin-left: 10px;
+    }
+
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+        color: #fff;
+    }
+
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+
+    .navbar-toggle {
+        margin-top: -44px;
+    }
+
+    .navbar-collapse {
+        background: #000;
+    }
+
+    .menu-bg .navbar-collapse {
+        background: #000;
+    }
+
+    .menu-bg .mainmenu .navbar-nav li a {
+        color: #fff;
+    }
+
+    .menu-bg .mainmenu .navbar-nav li a:hover {
+        color: #ccc;
+    }
+
+    .mainmenu .navbar-nav li a:hover {
+        color: #ccc;
+    }
+
+
+    .welcome-image-area h2,
+    .single-slide-item h2,
+    .welcome-video-area h2,
+    .call-to-area-text h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .slider-control {
+        display: none;
+    }
+
+    a.slide-btn {
+        font-size: 12px;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-social-link {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .pricing-box {
+        margin-top: 30px;
+    }
+
+    .single-testimonial {
+        padding: 20px;
+    }
+
+    .video-area-text {
+        margin-top: 50px;
+    }
+
+    .footer-social-link {
+        text-align: center;
+    }
+
+    .scrollup {
+        height: 40px;
+        width: 40px;
+        line-height: 35px;
+    }
+
+    .single-project-complete {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .header-text {
+        margin-top: 10px;
+    }
+
+    .footer-text h6 {
+        font-size: 14px;
+    }
+
+    .footer-area {
+        padding: 50px 0px;
+    }
+
+    .section-padding {
+        padding: 70px 0px;
+    }
+
+    .about-text {
+        margin-top: 30px;
+    }
+
+    .margin-top-c {
+        margin-top: 0px;
+    }
+
+    .section-title p {
+        padding: 0;
+    }
+
+    .single-contact-details {
+        margin-bottom: 30px;
+    }
+
+    .item .grid figure,
+    .gallery .grid figure {
+        min-width: 100%;
+    }
+
+    .call-to-action-small-button {
+        text-align: left;
+        margin-top: 25px;
+    }
+
+
+    .single-footer-top h2 {
+        margin-bottom: 10px;
+    }
+
+    .single-footer-top {
+        padding-bottom: 30px;
+    }
+
+    .single-what {
+        margin-bottom: 30px;
+    }
+
+    .portfolio-item {
+        width: 50%;
+    }
+
+    .view-icon a {
+        border-radius: 50%;
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+        font-size: 14px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .contact-icon {
+        margin-bottom: 15px;
+    }
+
+    .video-area {
+        padding: 160px 0px;
+    }
+
+    .portfolio-caption h4 {
+	font-size: 14px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+    .about-text h2{
+        font-size: 30px;
+    }
+    .single-contact {
+	margin-bottom: 30px;
+}
+    .header-image {
+	display: none;
+}
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

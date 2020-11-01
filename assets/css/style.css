@@ -1,0 +1,1066 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : wordpressboss
+Template Name: Brohost - One Page Responsive Hosting Template
+Version      : 1.0                                          
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+* 04.ABOUT CSS STYLE
+* 05.SERVICE CSS STYLE
+* 06.CALL TO ACTION CSS STYLE
+* 07.TESTIMONIAL CSS STYLE
+* 08.CONTACT CSS STYLE
+* 09.FOOTER CSS STYLE
+* 10.PRICING CSS STYLE
+* 11.WHY CHOOSE US CSS STYLE
+* 12.ANY QUESTIONS CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    height: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 28px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 100px 0px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.white-title h2 {
+    color: #fff;
+}
+
+
+
+a.read-more {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #687FFF;
+    background-color: #687FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 70px rgba(29, 24, 24, 0.09);
+    border-radius: 5px;
+}
+
+a.read-more:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #687FFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.scrollup {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    background: #687FFF;
+}
+
+.scrollup:hover {
+    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.preloader-area {
+    position: fixed;
+    background: #687FFF;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#loader {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+}
+
+@-webkit-keyframes loader {
+    0% {
+        left: -100px
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+@keyframes loader {
+    0% {
+        left: -100px
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+#box {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    -webkit-animation: animate .5s linear infinite;
+    animation: animate .5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+@-webkit-keyframes animate {
+    17% {
+        border-bottom-right-radius: 3px;
+    }
+
+    25% {
+        -webkit-transform: translateY(9px) rotate(22.5deg);
+        transform: translateY(9px) rotate(22.5deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(18px) scale(1, .9) rotate(45deg);
+        transform: translateY(18px) scale(1, .9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+    }
+
+    75% {
+        -webkit-transform: translateY(9px) rotate(67.5deg);
+        transform: translateY(9px) rotate(67.5deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg);
+    }
+}
+
+@keyframes animate {
+    17% {
+        border-bottom-right-radius: 3px;
+    }
+
+    25% {
+        -webkit-transform: translateY(9px) rotate(22.5deg);
+        transform: translateY(9px) rotate(22.5deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(18px) scale(1, .9) rotate(45deg);
+        transform: translateY(18px) scale(1, .9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+    }
+
+    75% {
+        -webkit-transform: translateY(9px) rotate(67.5deg);
+        transform: translateY(9px) rotate(67.5deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg);
+    }
+}
+
+#shadow {
+    width: 50px;
+    height: 5px;
+    background: #000;
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-radius: 50%;
+    -webkit-animation: shadow .5s linear infinite;
+    animation: shadow .5s linear infinite;
+}
+
+@-webkit-keyframes shadow {
+    50% {
+        -webkit-transform: scale(1.2, 1);
+        transform: scale(1.2, 1);
+    }
+}
+
+@keyframes shadow {
+    50% {
+        -webkit-transform: scale(1.2, 1);
+        transform: scale(1.2, 1);
+    }
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area {
+    height: 100%;
+}
+
+.welcome-image-area {
+    height: 100%;
+    background: #fff;
+}
+
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-row-area {
+    margin-top: 130px;
+}
+
+.header-text h2 {
+    color: #687FFF;
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.header-text h2 span {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.header-text p {
+    color: #2975cc;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.logo {
+    padding-top: 26px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.mainmenu .navbar-nav li {
+    margin-left: 45px;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #9aa6ca;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+}
+
+.mainmenu .navbar-nav li a:hover {
+    background: none;
+    color: #687FFF;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+.nav li a:focus,
+.nav li a:hover {
+    background: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.menu-bg {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #fff;
+    box-shadow: 0 2px 10px -1px rgba(87, 97, 100, 0.35);
+    background: #fff;
+    border: none;
+}
+
+.menu-bg .logo {
+    padding-top: 16px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.menu-bg .mainmenu .navbar-nav li a {
+    color: #9aa6ca;
+    padding-top: 22px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding-bottom: 22px;
+}
+
+.menu-bg .mainmenu .navbar-nav li a:hover {
+    color: #687FFF;
+}
+
+a.slide-btn {
+    margin: 0px 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #667DFF;
+    background-color: #667DFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 70px rgba(29, 24, 24, 0.09);
+    border-radius: 5px;
+}
+
+a.slide-btn:hover {
+    background: transparent;
+    color: #667DFF;
+    border: 1px solid #6C83FF;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+a.slide-btn.other-btn {
+    background: transparent;
+}
+
+a.slide-btn.other-btn:hover {
+    background: #687FFF;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.particle-bg {
+    background: #0000
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.what-we-area {
+    background: #687FFF;
+}
+
+.about-text {
+    margin-top: 80px;
+}
+
+.about-text h2 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.about-text h2 span {
+    color: #fff;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image img {}
+
+.margin-top-c {
+    margin-top: 50px;
+}
+
+.single-what {
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 0px 0px 20px rgba(29, 24, 24, 0.09);
+}
+
+.single-what i {
+    font-size: 60px;
+    background: #687FFF;
+}
+
+.single-what h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #647AFF;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.single-what p {
+    color: #696969;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #f9f9f9;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.single-service {
+    border: 1px solid #687FFF;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    background: #687FFF;
+    box-shadow: 0px 0px 20px rgba(29, 24, 24, 0.09);
+}
+
+.single-service:hover {
+    box-shadow: 0px 0px 20px rgba(29, 24, 24, 0.09);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.single-service h4 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fff;
+}
+
+
+.single-service p {
+    margin-bottom: 0;
+    color: #f0f0f0;
+}
+
+.service-icon img {
+    width: 75px;
+}
+
+.service-icon {
+    background: #fff;
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 6.CALL TO ACTION CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.call-to-action-small-area {
+    background: #687FFF;
+}
+
+.call-to-action-small-area h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.call-to-action-small-button {
+    text-align: right;
+}
+
+a.call-to-more {
+    margin: 0px 5px;
+    display: inline-block;
+    color: #000;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.TESTIMONIAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.testimonial-area {
+    background: #f9f9f9;
+}
+
+.testimonial-list {}
+
+.single-testimonial img {
+    width: 120px;
+}
+
+.single-testimonial {
+    padding: 40px 30px;
+    background: #fff;
+    margin: 0px 15px;
+}
+
+.single-testimonial h6 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+
+.single-testimonial h5 {
+    font-style: italic;
+}
+
+.rating ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rating ul li {
+    display: inline-block;
+}
+
+.rating ul li i {
+    color: #FBBC05;
+}
+
+
+.testimonial-area .owl-theme .owl-controls {
+    margin-top: 10px;
+}
+
+.testimonial-area .owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    border: 1px solid #687FFF;
+    background: #687FFF;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-area {
+    background: #f9f9f9;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.contact-icon {
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+
+.contact-icon i {
+    font-size: 20px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+
+.single-contact {
+    background: #687FFF;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.single-contact h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    text-transform: capitalize;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.single-contact p {
+    color: #f0f0f0;
+    margin-bottom: 0;
+}
+
+.contact-form {}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    padding: 10px 7px 14px 15px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+
+.form-control:focus {
+    border-color: #687FFF;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #687FFF;
+    background-color: #687FFF;
+    border-radius: 0px;
+    font-weight: 600;
+    border-radius: 0px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #687FFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.footer-area {
+    background: #000;
+}
+
+.social-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-text h2 {
+    color: #687FFF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid #687FFF;
+    display: inline-block;
+    padding: 7px 7px;
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 12px;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.social-links ul li a {
+    display: block;
+    color: #fff;
+    background: #687FFF;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.footer-text p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.PRICING CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.pricing-area {
+    background: #f9f9f9;
+}
+
+.pricing-box {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #fff;
+}
+
+.pricing-box:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 0px 0px 70px rgba(29, 24, 24, 0.09);
+}
+
+.plan-price {
+    padding: 20px 10px;
+}
+
+.plan-price h5 {
+    color: #000;
+    font-weight: 300;
+    margin: 0;
+}
+
+.pricing-header .plan-title {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.plan-price p {
+    font-size: 40px;
+    color: #8F7AFF;
+    font-weight: 700;
+    margin: 0;
+}
+
+.plan-price p span {
+    font-size: 20px;
+    color: #9aa6ca;
+    font-weight: 300;
+}
+
+.plan-features {
+    margin-top: 40px;
+    border-top: 1px solid #f3f3f3;
+}
+
+.plan-features li {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #f3f3f3;
+    padding-top: 16px;
+}
+
+.plan-features li span {
+    font-weight: 700;
+}
+
+a.plan-more {
+    margin-top: 30px;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #8F7AFF;
+    font-weight: 600;
+    background: #8F7AFF;
+    border-radius: 30px;
+}
+
+a.plan-more:hover {
+    color: #000;
+    border: 1px solid #8F7AFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: transparent;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.WHY CHOOSE US CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.why-chhose-us-area {
+    background: #687FFF;
+}
+
+
+.single-about h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fff;
+}
+
+.about-icon {
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.about-icon i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.single-about p {
+    margin-bottom: 0;
+    color: #f0f0f0;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12.ANY QUESTIONS CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.any-questions-area {}
+
+#faq .panel-group .panel {
+    margin-bottom: 8px;
+}
+
+#faq .panel-default {
+    border: none;
+}
+
+#faq .panel-default > .panel-heading {
+    background: #f0f0f0;
+    color: #000;
+}
+
+#faq .panel-heading {
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+#faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: none;
+    padding-top: 22px;
+    padding-left: 32px;
+    padding-bottom: 22px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"] {
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"]:hover {
+    color: #000;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"]:after {
+    content: "-";
+    display: block;
+    position: absolute;
+    line-height: 1;
+    right: 1em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed:after {
+    content: "+";
+    font-size: 20px;
+}
